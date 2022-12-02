@@ -14,12 +14,19 @@
     year=2025
     document.write("<br>")
     document.write("<br>")
-    document.write("Usuario 2 tiene "+(year-2000)+" años.")
+    let u2=year-2000
+    document.write("Usuario 2 tiene "+(u2)+" años.")
     document.write("<br>")
     document.write("<br>")
-    document.write("Usuario 3 tiene "+(year-1995)+" años.")
+    let u3=year-1995
+    document.write("Usuario 3 tiene "+(u3)+" años.")
     document.write("<br>")
     document.write("<br>")
-    document.write("Usuario 4 tiene "+(year-1990)+" años.")
+    let u4=year-1990
+    document.write("Usuario 4 tiene "+(u4)+" años.")
     document.write("<br>")
     document.write("<br>")
+
+    let promedio=(u2+u3+u4)/3
+
+    document.write("El promedio es: "+Math.round(promedio))
