@@ -11,6 +11,7 @@
     document.write("<br>")
     document.write("El año de nacimiento es: "+(year-a))
 
+    year=2025
     document.write("<br>")
     document.write("<br>")
     document.write("Usuario 2 tiene "+(year-2000)+" años.")
