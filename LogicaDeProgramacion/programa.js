@@ -1,0 +1,12 @@
+    document.write("<h2>Usuario:</h2>")
+    let user=prompt("Tu nombre:")
+    document.write(user)
+    document.write("<br>")
+
+    let a=prompt("Tu edad es:")
+    document.write("Tiene "+a+" años.")
+    document.write("<br>")
+    let b=prompt("El año actual es:")
+    document.write("Año: "+b)
+    document.write("<br>")
+    document.write("El año de nacimiento es: "+(b-a))
