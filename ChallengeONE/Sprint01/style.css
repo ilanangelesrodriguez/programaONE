@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+html{
+    background-color: lightblue;
+    font-family: 'Merriweather', serif;
+    max-width: 100%;
+    width: 100vw;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: small;
+}
+h2 {
+    font-size: larger;
+}
+textarea{
+    border: none;
+    background-color: transparent;
+    font-size: larger;
+    color: darkblue;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+textarea:active {
+    border: none;
+}
+/* .botones{
+    display: flex;
+    align-items: flex-end;
+} */
+.btn-encriptar, .btn-desencriptar{
+    border: darkblue;
+    width: 20vw;
+    height: 3rem;
+    border-radius: 5rem;
+    margin: 0.3rem;
+    font-weight: bold;
+}
+.btn-encriptar{
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+.btn-desencriptar{
+    background-color: #D8DFE8;
+    color: darkblue;
+    cursor: pointer;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.cont-enc{
+    display: flex;
+    justify-content: center;
+    height: 40vh;
+}
+.encriptar {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2vh;
+}
+.help-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 1vw;
+    font-size: small;
+}
+.resultado svg {
+    max-width: 100%;
+    width: 40vw;
+}
+.message {
+    text-align: center;
+}
+.resultado{
+    background-color: white;
+    width: 30vw;
+    height: 72vh;
+    border-radius: 5vw;
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+.credits {
+    font-size: small;
+    text-align: center;
+}
+/* 481 */
+@media (max-width: 550px){
+    /* p{
+        font-size: 3vw;
+    } */
+    textarea{
+        font-size: small;
+    }
+    .header {
+        padding-bottom: 3vh;
+    }
+    .encriptar {
+        width: 80vw;
+    }
+    .btn-encriptar, .btn-desencriptar{
+        width: 80vw;
+    }
+    .resultado {
+        width: 80vw;
+        height: 20vh;
+    }
+    .resultado svg {
+        display: none;
+    }
+}
