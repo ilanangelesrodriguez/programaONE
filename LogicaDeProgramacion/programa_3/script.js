@@ -5,8 +5,24 @@ pincel.fillStyle="grey";
 pincel.fillRect(0,0,600,400);
 
 function exhibirAlerta(evento) {
+    var x=evento.pageX-pantalla.offsetLeft;
+    var y=evento.pageY-pantalla.offsetTop;
     console.log(evento);
-    alert("Hiciste click");
+    //alert("Hiciste click");
+    alert(x+", "+y);
+}
+function dibujarCirculo(evento) {
+    var x=evento.pageX-pantalla.offsetLeft;
+    var y=evento.pageY-pantalla.offsetTop;
+
+    pincel.fillStyle="blue";
+    pincel.beginPath();
+    pincel.arc(x,y,10,0,2*3.14);
+    pincel.fill();
+
+    console.log(x+", "+y);
+    //alert(x+", "+y);
 }
 
-pantalla.onclick=exhibirAlerta;
+//pantalla.onclick=exhibirAlerta;
+pantalla.onclick=dibujarCirculo;
