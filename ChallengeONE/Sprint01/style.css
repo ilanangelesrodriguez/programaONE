@@ -16,6 +16,7 @@ h2 {
 }
 textarea{
     border: none;
+    outline: 0 none;
     background-color: transparent;
     font-size: larger;
     color: darkblue;
