@@ -19,8 +19,9 @@
         <div class="encriptar">
         <form action="">
             <div class="cont-enc">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                <textarea class="text-input" id="text-input" name="" id="" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
             </div>
+            <!-- <input class="cont-enc" type="text" placeholder="Ingrese el texto aquí"> -->
             <div class="help-cont">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_2_231)">
@@ -35,8 +36,10 @@
                 <p>Solo letras minúsculas y sin acentos</p>   
             </div>
             <div class="botones">
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
+                <input class="btn-encriptar" id="btn-encriptar" type="button" value="Encriptar">
+                <input class="btn-desencriptar" id="btn-desencriptar" type="button" value="Desencriptar">
+                <!-- <button class="btn-encriptar">Encriptar</button> -->
+                <!-- <button class="btn-desencriptar">Desencriptar</button> -->
             </div>
         </form>
     </div>
@@ -182,8 +185,10 @@
             </defs>
         </svg>            
         <div class="message">
-            <h2> Ningún mensaje fue encontrado</h2>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            <h3>Mensaje encriptado</h3>
+            <!-- <p>Ingresa el texto que desees encriptar o desencriptar.</p> -->
+            <input class="input-salida" type="text" id="message">
+            <input class="btn" id="btn-copy" type="submit" value="Copiar">
         </div>
     </div>
     </section> 
@@ -195,4 +200,5 @@
         </div>
     </section> 
 </body>
+<script src="./script.js"></script>
 </html>
