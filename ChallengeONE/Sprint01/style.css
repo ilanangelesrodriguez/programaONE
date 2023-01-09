@@ -98,11 +98,15 @@ textarea:active {
 }
 .message {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .resultado{
     background-color: white;
     width: 30vw;
-    height: 72vh;
+    /* height: 72vh; */
     border-radius: 5vw;
     padding: 2vw;
     display: flex;
@@ -113,7 +117,7 @@ textarea:active {
 .footer {
     display: flex;
     justify-content: center;
-    padding: 2vh;
+    padding: 2vw;
 }
 .credits {
     font-size: small;
@@ -138,7 +142,6 @@ textarea:active {
     }
     .resultado {
         width: 80vw;
-        height: 20vh;
     }
     .resultado svg {
         display: none;
